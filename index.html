@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            margin: 40px;
+            border: 5px solid black;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #0004ff;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 21px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #000000;
+        }
+
+        a:hover {
+            color: rgb(13, 192, 84);
+        }
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#github">Github</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#web">Pemrograman Web</a></li>
+                <li><a href="#informasi">Informasi Tambahan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Portofolio Felix Joshua Paulus</h1>
+        <img src="profil.jpg" width="200" alt="Foto Profil Felix Joshua Paulus">
+
+        <section id="profil">
+            <h2>Profil</h2>
+            <p>Saya saat ini adalah seorang mahasiswa semester 5 yang sedang menempuh pendidikan di Universitas Pertamina, jurusan Ilmu Komputer.</p>
+        </section>
+
+        <section id="github">
+            <h2>Link Github (Ordered List)</h2>
+            <ol>
+                <li>Github Profile - <a href="https://github.com/felixjoshua">Link</a></li>
+                <li>Tht Portofolio (Repository) - <a href="https://github.com/felixjoshua/thtPortofolio-Week3">Link</a></li>
+            </ol>
+        </section>
+
+        <section id="skill">
+            <h2>Skill (Unordered List)</h2>
+            <ul>
+                <p>Beberapa skill yang sedang dipelajari di dalam/luar perkuliahan:</p>
+                <li><strong>Python</strong></li>
+                <li><strong>JavaScript</strong></li>
+                <li><strong>HTML</strong></li>
+                <li><strong>C++</strong></li>
+                <li><strong>Rust</strong></li>
+                <li>Framework: <em>Node.js</em>, <em>React</em>, <em>SQL</em></li>
+            </ul>
+            <p>Berikut <u>beberapa</u>, yang bisa saya <mark>sebutkan</mark>.</p>
+        </section>
+
+        <section id="web">
+            <h2>Pemrograman Web di Semester 5</h2>
+            <blockquote>
+                "Dalam semester 5 ini, saya akan mempelajari memprogram web secara langsung melalui mata kuliah Pemrograman Web dan Praktikum Pemrograman Web."
+            </blockquote>
+       
+            <video controls width="400" height="300">
+                <source src="NoCopyrightVid.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <audio controls>
+            <source src="NoCopyrightSound.mp3" type="audio/mpeg">
+        </audio>
+
+        <section id="informasi">
+            <h2>Informasi Tambahan (Table Merge Cell)</h2>
+            <table border="1">
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Felix Joshua Paulus</td>
+                    <td>105222032</td>
+                    <td rowspan="2">Mahasiswa Aktif</td>
+                </tr>
+                <tr>
+                    <td>Felix Joshua Paulus</td>
+                    <td>105222032</td>
+                </tr>
+            </table>
+        </section>
+
+        
+        <section id="kontak">
+            <h2>Form Kontak</h2>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="umur">Umur:</label>
+                <input type="number" id="umur" name="umur" required><br><br>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="male"> Laki-laki
+                <input type="radio" id="female" name="gender" value="female"> Perempuan<br><br>
+
+                <label for="status">Status:</label>
+                <input type="checkbox" id="mahasiswa" name="status" value="mahasiswa"> Mahasiswa 
+                <input type="checkbox" id="lainnya" name="status" value="lainnya"> Lainnya<br><br>
+
+                <label for="country">Pilih Negara (Choose Your Country):</label>
+                <select id="country" name="country">
+                    <option value="indonesia">Indonesia</option>
+                    <option value="lainnya">Lainnya (Other)</option>
+                </select><br><br>
+
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;SEMUA HAK CIPTA DILINDUNGI.</p>
+    </footer>
+
+</body>
+</html>
